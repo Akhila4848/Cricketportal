@@ -1,0 +1,71 @@
+<style>
+    body{
+     background-image: url("assets/wc.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding:200px;
+     /* background-size: 300px 100px; */
+     /* height: 00%; */
+    }
+</style>
+<body>
+<div class ="container">
+    <h2 class="page-header">Cricketer Registration and Info</h2>
+    <form (submit) = "addLibrary()">
+        <div class = "form-group">
+            <label>First name</label>
+            <input type="text" [(ngModel)]="first_name" name= "first_name" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Last name</label>
+            <input type="text" [(ngModel)]="last_name" name="last_name" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Date of Join </label>
+            <input type="text" [(ngModel)]="doj" name="doj" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Birth date</label>
+            <input type="text" [(ngModel)]="bday" name="bday" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Type of player</label>
+            <input type="text" [(ngModel)]="type" name="type" class ="form-control">
+       
+        <input type="submit" class ="btn btn btn-success" value="submit">&nbsp; &nbsp;
+        
+        <!-- <input type="button" (click)="books.component.html" class ="btn btn btn-success" value="next"> -->
+        <a routerLink="/info"><input type="button" class ="btn btn btn-info" value="Show info" style="position: absolute;" ></a> 
+        </div>
+    </form>
+</div>
+
+</body>
+<!-- <div class ="container">
+    <div *ngFor = "let library of librarys">
+        <div class ="col-md-3">
+            {{library.first_name}}
+        </div>
+        <div class ="col-md-3">
+            {{library.last_name}}
+        </div>
+        <div class ="col-md-3">
+            {{library.doj}}
+        </div>
+        <div class ="col-md-3">
+            {{library.bday}}
+        </div>
+        <div class ="col-md-3">
+            {{library.type}}
+        </div> -->
+        <!-- <form (Delete) = "deleteLibrary(library._id)"> -->
+        <!-- <div class ="col-md-3">
+           <input type="button" (click)= "deleteLibrary(library._id)" value= "Delete" class ="btn btn-danger"> -->
+           <!-- <input type="submit" value= "Delete" class ="btn btn-danger"> -->
+        <!-- </div> -->
+        <!-- </form> -->
+    <!-- </div> -->
+<!-- </div>     -->
+
+
+

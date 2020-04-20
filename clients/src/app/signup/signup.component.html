@@ -1,0 +1,27 @@
+<div class ="container">
+    <h2 class="page-header">Sign Up</h2>
+    <div>
+        <img src="assets/user.png" id="icon" alt="User Icon"  />
+      </div>
+    <form (submit) = "addPerson()">
+        <div class = "form-group">
+            <label>Name</label>
+            <input type="text" [(ngModel)]="Name" name= "Name" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>User Name</label>
+            <input type="text" [(ngModel)]="user_name" name="user_name" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Password</label>
+            <input type="text" [(ngModel)]="password" name="password" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Phone No</label>
+            <input type="text" [(ngModel)]="phno" name="phno" class ="form-control">
+        </div>
+        <input type="submit" class ="btn btn btn-success" value="submit"> Already a User
+        <a routerLink="/signin"><input type="button" class ="btn btn btn-success" value="SignIn"  style="margin:10px;" ></a> 
+        <!-- <input type="submit" class ="btn btn btn-success" onclick="UpdateDetails()" value="change"> -->
+    </form>
+</div>

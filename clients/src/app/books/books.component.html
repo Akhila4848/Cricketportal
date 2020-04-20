@@ -1,0 +1,69 @@
+<style>
+    body{
+     background-image: url("assets/wc.jpg");
+     background-size: cover;
+     padding:170px
+     /* height: 00%; */
+    }
+</style>
+<body>
+<div class ="container">
+    <h2 class="page-header">User Section</h2>
+    <form (submit) = "addBook()">
+        <div class = "form-group">
+            <label>First name</label>
+            <input type="text" [(ngModel)]="p_name" name= "p_name" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Last name</label>
+            <input type="text" [(ngModel)]="last_name" name="last_name" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>Password</label>
+            <input type="text" [(ngModel)]="password" name="password" class ="form-control">
+        </div>
+        <div class = "form-group">
+            <label>User No</label>
+            <input type="text" [(ngModel)]="repno" name="repno" class ="form-control">
+        </div>
+        
+        <input type="submit" class ="btn btn btn-success" value="submit"> &nbsp;&nbsp;
+        <a routerLink="/librarys"><input type="button" class ="btn btn btn-success" value="Register Portal" style="position: absolute;" ></a> &nbsp; &nbsp; &nbsp;
+<br>
+<br>
+
+Registered users Info        <a routerLink="/uinfo"><input type="button" class ="btn btn btn-success" value="User Info" style="position: absolute;" ></a> 
+        <!-- <input type="submit" class ="btn btn btn-success" onclick="UpdateDetails()" value="change"> -->
+    </form>
+</div>
+<hr>
+</body>
+<!-- <div class ="container">
+    <div *ngFor = "let book of books">
+        <div class ="col-md-3">
+     {{book.p_name}}
+        </div>
+        <div class ="col-md-3">
+            {{book.last_name}}
+        </div>
+        <div class ="col-md-3">
+            {{book.password}}
+        </div>
+        <div class ="col-md-3">
+            {{book.repno}}
+        </div> -->
+        
+        <!-- <form (Delete) = "deleteLibrary(library._id)"> -->
+        <!-- <div class ="col-md-3">
+           <input type="button" (click)= "deleteBook(book._id)" value= "Delete" class ="btn btn-danger"> -->
+           
+            <!-- <input type="submit" value= "Delete" class ="btn btn-danger"> -->
+         <!-- </div> 
+        <input type="text" name="edit_usn" [(ngModel)]="edit_usn" >
+        <div>
+        <input type="button" (click)= "UpdateDetails(book._id,this.edit_usn)" value= "Update" class ="btn btn-success">
+        </div>  -->
+        <!-- </form> -->
+    <!-- </div>
+</div>  -->
+ 

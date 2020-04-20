@@ -1,0 +1,38 @@
+<style>
+    body{
+     background-image: url("assets/wc.jpg");
+     background-size: cover;
+     padding:300px;
+     /* height: 00%; */
+    }
+</style>
+<body>
+<div class ="container">
+    <div *ngFor = "let library of librarys">
+        <div class ="col-md-3">
+            {{library.first_name}}
+        <!-- </div> -->
+        <!-- <div class ="col-md-3"> -->
+            {{library.last_name}}
+        <!-- </div> -->
+        <!-- <div class ="col-md-3"> -->
+            {{library.doj}}
+        <!-- </div> -->
+        <!-- <div class ="col-md-3"> -->
+            {{library.bday}}
+        <!-- </div> -->
+        <!-- <div class ="col-md-3"> -->
+            {{library.type}}
+        <!-- </div> -->
+        <!-- <form (Delete) = "deleteLibrary(library._id)"> -->
+        <!-- <div class ="col-md-3"> -->
+           <input type="button" (click)= "deleteLibrary(library._id)" value= "Delete" class ="btn btn-danger">
+           <!-- <input type="submit" value= "Delete" class ="btn btn-danger"> -->
+        </div>  
+        <!-- </form> -->
+    </div>
+</div><br>
+
+<a routerLink="/librarys"><input type="button" class ="btn btn btn-info" value="Back" style="position: absolute;" ></a> 
+
+</body>

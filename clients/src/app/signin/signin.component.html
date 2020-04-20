@@ -1,0 +1,29 @@
+<div class ="container">
+    <h2 class="page-header">Sign Up User</h2>
+<div>
+    <img src="assets/user.png" id="icon" alt="User Icon"  />
+  </div>
+
+  <form (submit) = "addPerson()">
+    <div class = "form-group">
+        <label>User name</label>
+        <input type="text" [(ngModel)]="user_name" name= "user_name" class ="form-control">
+    </div>
+ 
+    <div class = "form-group">
+        <label>Password</label>
+        <input type="text" [(ngModel)]="password" name= "password" class ="form-control">
+    </div> 
+    <input type="submit" class ="btn btn btn-success" value="submit" style="margin:10px;"> 
+    
+      <a routerLink="/info"><input type="button" class ="btn btn btn-success" value="Sign"  style="margin:10px;" ></a> 
+        
+  </form>
+  </div>
+  
+  
+  <!-- Error message-->
+  <!-- <div class="alert" *ngIf="serverErrorMessages">
+    {{serverErrorMessages}}
+  </div> -->
+  

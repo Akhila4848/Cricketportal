@@ -1,0 +1,42 @@
+<style>
+    body{
+     background-image: url("assets/g.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding:300px;
+     /* height: 00%; */
+    }
+</style>
+<body>
+<div class ="container">
+    <div *ngFor = "let book of books">
+        <div class ="col-md-3">
+     {{book.p_name}}
+        <!-- </div> -->
+        <!-- <div class ="col-md-3"> -->
+            {{book.last_name}}
+        <!-- </div> -->
+        <!-- <div class ="col-md-3"> -->
+            {{book.password}}
+        <!-- </div> -->
+        <!-- <div class ="col-md-3"> -->
+            {{book.repno}}
+        <!-- </div> -->
+        
+        <!-- <form (Delete) = "deleteLibrary(library._id)"> -->
+        <!-- <div class ="col-md-3"> -->
+           <input type="button" (click)= "deleteBook(book._id)" value= "Delete" class ="btn btn-danger">
+           
+            <!-- <input type="submit" value= "Delete" class ="btn btn-danger"> --> 
+         <!-- </div> -->
+        <input type="text" name="edit_usn" [(ngModel)]="edit_usn" >
+        <!-- <div> -->
+        <input type="button" (click)= "UpdateDetails(book._id,this.edit_usn)" value= "Update" class ="btn btn-success">
+        </div> 
+        <!-- </form> -->
+    </div>
+        
+    
+ 
+  
+
