@@ -1,4 +1,4 @@
-Angular Side
+Client Side
 Run ng serve --open for a dev server on the terminal.
 
 Command To Create Component ng g c componentname
